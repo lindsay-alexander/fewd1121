@@ -14,3 +14,8 @@ p{
 	text-align: center;
 	padding: 1%;
 }
+
+li{
+	font-family: Source Sans Pro, Helvetica, sans-serif;
+	font-weight: bold;
+}
