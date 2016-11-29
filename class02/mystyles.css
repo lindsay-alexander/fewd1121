@@ -1,0 +1,16 @@
+h1{
+	text-align: center;
+	color: navy;
+	font-family: Source Sans Pro, Helvetica, sans-serif;
+	background-color: gold;
+	font-size: 25px;
+	padding: 1%;
+}
+
+p{
+	font-family: Source Sans Pro, Helvetica, sans-serif;
+	font-weight: light;
+	color: navy;
+	text-align: center;
+	padding: 1%;
+}
