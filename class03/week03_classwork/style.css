@@ -15,11 +15,12 @@
 
 .lorem {
 	text-align: center;
-	padding: 10px;
+	padding-top: 10px;
+	padding-bottom: 1px;
 	display: block;
 	background-color: salmon;
 	display: block;
-	margin: 10px 0;
+	margin: 10px 0px;
 }
 
 #first {
