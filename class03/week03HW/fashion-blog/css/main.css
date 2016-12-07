@@ -1,0 +1,135 @@
+#container {
+    width: 720px;
+    padding: 54px;
+    font-family: "Lato";
+    color: #444444;
+    line-height: 1.5;
+}
+
+#header {
+    font-size: 30px;
+    color: #dd0000;
+    line-height: 0;
+}
+
+#subheader {
+    font-size: 15px;
+    color: black;
+    line-height: 0;
+}
+
+#header-nav a {
+    color: #dddddd;
+    font-size: 12px;
+    line-height: 0;
+    display: inline-block;
+    padding: 0 10px 30px 0;
+}
+
+#header-nav :hover {
+    color: black;
+}
+
+.date {
+    color: #cccccc;
+    font-size: 20px;
+    margin-top: 30px 0 0 0;
+    line-height: 0;
+}
+
+.article-title {
+    color: black;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.images {
+    width: 400px;
+}
+
+.copy {
+    color: #444444;
+    font-size: 9px;
+    line-height: 1.5;
+    width: 400px;
+}
+
+.continues {
+    color: #dd0000;
+    font-weight: bold;
+    font-size: 9px;
+    margin-left: 350px;
+    width: 400px;
+    text-decoration: none;
+}
+
+.hairline {
+    width: 400px;
+    height: 1px;
+    background-color: lightgray;  
+    margin: 10px 0;  
+}
+
+.continues:hover {
+    color: #aa0000;
+}
+
+#footer-nav a {
+    color: #d00000;
+    line-height: 0;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#footer-nav {
+    color: #cccccc;
+    font-size: 9px;
+    padding-top: 10px;
+}
+
+#footer-nav a:hover {
+    color: #aa0000;
+}
+
+#copyright {
+    font-size: 9px;
+    color: #bbbbbb;
+}
+
+/*Complete the fashion blog from the attached screenshot. Take a look at the copy.txt for what to plug into the HTML.
+
+Some values you will also need:
+
+Content:
+    720px wide
+    54px of padding
+    solid, left, 6px, border, #dddddd
+
+High-level text properties:
+    #444444
+    "Lato" font
+    1.5 line-height
+
+"Better Dressed People":
+    black
+
+Links:
+    #DD0000
+
+Links hover:
+    #aa0000
+
+Navigation links:
+    #dddddd
+
+Navigation links hover:
+    black
+
+Date: 
+    #cccccc
+
+Article Title
+    black
+
+Copyright
+    #bbbbbb*/
