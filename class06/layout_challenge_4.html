@@ -1,0 +1,113 @@
+<html>
+<head>
+	<title>layout-challenge</title>
+
+	<link href='https://fonts.googleapis.com/css?family=Oswald:700,400|Merriweather:700,700italic|Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/styles.css">
+
+	<style type="text/css">
+
+	.container {
+		width: 960px;
+		margin: 0 auto;
+		padding: 10px;
+	}
+
+	article, main, aside, footer {
+		border: solid 1px black;
+		background-color: lightgrey;
+		height: 100px;
+		margin-bottom: 30px;
+	}
+
+	header {
+		background-color: white;
+	}
+
+	article {
+		float: left;
+		width: 20%;
+		margin: 30px 0;
+	}
+
+	nav {
+		float: right;
+		width: 70%;
+		height: 100px;
+	}
+
+	.nav-item {
+		display: inline-block;
+		border: solid 1px black;
+		background-color: lightgrey;
+		width: 20%;
+  	  	height: 50px;
+  	  	float: right;
+  	  	margin-left: 20px;
+  	  	margin-top: 60px;
+	}
+
+	main, aside {
+		height: 300px;
+	}
+
+	main {
+		float: left;
+		width: 100%;
+	}
+
+	.box-container {
+		clear: both;
+  	  	height: 100px;
+	}
+
+	.box-item {
+		display: inline-block;
+		border: solid 1px black;
+		background-color: lightgrey;
+ 	  	width: 30%;
+  	  	height: 100px;
+	}
+
+	footer {
+		clear: both;
+		margin-top: 30px;
+	}
+
+	#two, #three {
+		margin-left: 36px;
+	}
+
+	</style>
+	
+</head>
+<body>
+
+<div class="container">
+
+<h1>Simple Marketing</h1>
+
+<header>
+	<article></article>
+	<nav>
+  		<div class="nav-item"></div>
+  		<div class="nav-item"></div>
+  		<div class="nav-item"></div> 
+  		<div class="nav-item"></div> 
+	</nav>
+</header>
+
+<main></main>
+
+<div class="box-container">
+  <div class="box-item" id="one"></div>
+  <div class="box-item" id="two"></div>
+  <div class="box-item" id="three"></div> 
+</div>
+
+<footer></footer>
+
+</div>
+
+</body>
+</html>
