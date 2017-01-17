@@ -1,0 +1,313 @@
+Framework*/
+
+.container {
+	width: 100%;
+}
+
+p{
+	margin: 0;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 2rem;
+	line-height: 1.5;
+	cursor: default;
+}
+
+/*Header*/
+
+#header{
+	background: black;
+	color: white;
+	border-bottom: 3px solid yellow;
+	padding: 0 3%;
+}
+
+h1 {
+	font-size: 3rem;
+	line-height: 1.5;
+	color: yellow;
+	font-family: 'Merriweather', serif;
+}
+
+h2 {
+	font-size: 3.25rem;
+	font-weight: 900;
+}
+.nav{
+	text-align: right;
+}
+
+#header ul{
+	margin: 4% 0;
+}
+
+#header li{
+	display: inline-block;
+}
+
+#header nav li a:hover {
+	color: yellow;
+}
+
+#header nav li.active a {
+	background: #666;
+}
+
+#header a {
+	color: inherit;
+	text-decoration: none;
+	padding: 0 15px;
+}
+
+.hamburger{
+	display: none;
+}
+
+/*Other*/
+
+h3 {
+	font-family: 'Merriweather', serif;
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+/*Tagline*/
+
+#tagline{
+	background-color: #C6C6C6;
+}
+
+#tagline p{
+	font-family: 'Merriweather', serif;
+	font-style: italic;
+	text-align: center;
+	font-size: 1.25em;
+	line-height: 3em;
+	margin: 0;
+}
+
+#tagline #taste {
+	color: #999;
+	text-decoration: line-through;
+}
+
+#tagline #are {
+	text-decoration: none;
+	border-bottom: 3px solid yellow;
+}
+
+/*Banner*/
+
+.banner-row {
+	background: url(../images/coworking.jpg) center center no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	padding: 5%;
+	box-shadow: inset 0 0 5px rgba(0,0,0,.75);
+}
+
+.blurb{
+	background: rgba(255,255,255,.8);
+	padding: 5% 10%;
+	box-shadow: 0 0 5px rgba(0,0,0,.75);
+	border-radius: 5px;
+}
+
+.blurb p{
+	margin-bottom: 7%;
+}
+
+.button {
+	font-family: 'Oswald', sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	background: yellow;
+	color: black;
+	display: block;
+	text-align: center;
+	padding: 3%;
+	box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+	border-radius: 3px;
+}
+
+/*Touts*/
+
+.tout {
+	padding: 10%;
+	box-shadow: inset -1px 0 0 rgba(0,0,0,.15);
+}
+
+.tout p{
+	margin-bottom: 10%
+}
+
+.tout .button {
+	background: #C6C6C6;
+}
+
+#footer {
+	background: black;
+	color: white;
+	line-height: 7rem;
+}
+
+#footer-text p{
+	font-size: 1.75rem;
+}
+
+/*media queries*/
+
+/*large desktops/laptops*/
+@media(min-width: 1200px){}
+
+/*landscape tablets and medium devices*/
+@media (min-width: 992px) and (max-width: 1199px){
+
+	nav{
+		display: none;
+	}
+
+	h1{
+		margin: 0;
+		padding: 2% 0;
+	}
+
+	.hamburger{
+		display: inline-block;
+	}
+
+	.blurb p{
+		margin-bottom: 4%;
+	}
+
+	.blurb{
+		padding: 4%;
+	}
+
+	.tout{
+		padding: 3%;
+		box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+	}
+
+	.tout p{
+		margin-bottom: 2%;
+	}
+
+	.button{
+		padding: 2%; 
+	}
+}
+
+/*portrait tablets and small desktops*/
+@media (min-width: 768px) and (max-width: 991px){
+
+	nav{
+		display: none;
+	}
+
+	h1{
+		margin: 0;
+		padding: 2% 0;
+	}
+
+	.hamburger{
+		display: inline-block;
+	}
+
+	.blurb p{
+		margin-bottom: 4%;
+	}
+
+	.blurb{
+		padding: 4%;
+	}
+
+	.tout{
+		padding: 7%;
+		box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+	}
+
+	.tout p{
+		margin-bottom: 2%;
+	}
+
+	.button{
+		padding: 2%; 
+	}
+}
+
+
+/*landscape phones and small portrait tablets*/
+@media (min-width: 480px) and (max-width: 767px){
+	nav{
+		display: none;
+	}
+
+	h1{
+		margin: 0;
+		padding: 2% 0;
+		font-size: 2rem;
+	}
+
+	#tagline p{
+		font-size: 2rem;
+	}
+
+	.tout{
+		padding: 8%;
+		box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+	}
+
+	.tout p{
+		margin-bottom: 4%;
+	}
+
+	#footer p{
+		font-size: 1.5rem;
+	}
+
+	.button{
+		padding: 2%;
+	}
+}
+
+/*portrait phones and smaller*/
+/*landscape phones and small portrait tablets*/
+@media (max-width: 479px){
+	nav{
+		display: none;
+	}
+
+	h1{
+		margin: 0;
+		padding: 2% 0;
+		font-size: 2rem;
+	}
+
+	#tagline p{
+		font-size: 2rem;
+	}
+
+	.tout{
+		padding: 8%;
+		box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+	}
+
+	.tout p{
+		margin-bottom: 4%;
+	}
+
+	#footer p{
+		font-size: 1.5rem;
+	}
+
+	.button{
+		padding: 2%;
+	}
+}
+
+

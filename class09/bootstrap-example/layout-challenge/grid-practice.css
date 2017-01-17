@@ -9,6 +9,7 @@ article {
 	height: 100%;
 }
 
-.col-leg-6 p {
-	color: blue;
+#sidebar {
+	height: 400px;
+	float: left;
 }
