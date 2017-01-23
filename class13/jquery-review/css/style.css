@@ -1,0 +1,25 @@
+body{
+	font-family: Arial;
+}
+
+
+#first{
+	background-color: gray;
+	float: left;
+	height: 200px;
+	width: 200px;
+}
+
+#second{
+	background-color: blue;
+	float: right;
+	height: 200px;
+	width: 200px;
+}
+
+#bonus{
+	background-color: orange;
+	clear: both;
+	height: 200px;
+	width: 200px;
+}
