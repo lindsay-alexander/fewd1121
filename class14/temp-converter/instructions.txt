@@ -12,4 +12,4 @@ Class 11 - Temperature Converter
 - You will have to use parseInt() or parseFloat() to convert the user's input from a string to a number
 - Formulas:
 	Fahrenheit = Celsius * 1.8 + 32
-	Celsis = (Fahrenheit - 32) / 1.8
+	Celsius = (Fahrenheit - 32) / 1.8
