@@ -20,10 +20,6 @@
     padding: 12% 0;
 }
 
-#menu-toggle .btn .btn-default{
-    display: none;
-}
-
 /*Headers*/
 h1{
     font-size: 2.5rem;
@@ -84,26 +80,9 @@ p{
     background-image: url(../images/bg.jpg);
 }
 
-#page-content-wrapper .home {
-  display: table;
-  width: 100%;
-  height: auto;
-  padding: 100px 0;
-  text-align: center;
-  color: white;
-  background: url(../img/downloads-bg.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  display: table-cell;
-  vertical-align: middle;
-}
-
-
 /*Education*/
 .education{
-    background: #cbdfeb;
+    /*background: #cbdfeb;*/
 }
 
 .education h3,.education h4,.education h5,.education p{
@@ -112,7 +91,7 @@ p{
 
 /*Experience*/
 .experience{
-    background: #525565;
+    /*background: #525565;*/
 }
 
 .experience h3,.experience h4,.experience h5,.experience p{
@@ -121,7 +100,7 @@ p{
 
 /*Skillset*/
 .skillset{
-    background: #beb9b5;
+    /*background: #beb9b5;*/
 }
 
 .skillset h3,.skillset h4,.skillset h5,.skillset p{
@@ -134,7 +113,7 @@ p{
 
 /*Location*/
 .location{
-    background-image: url(../images/location.png);
+    /*background-image: url(../images/location.png);*/
     background-size: cover;
 }
 
