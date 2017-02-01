@@ -6,8 +6,8 @@ $(window).scroll(function(){
     // first thing
 
     if (isScrolledIntoView('#home')===true){
-        $('body').css('background-color','white');
-        $('#sidebar-wrapper').css('background-color','black');
+        $('body').css('background-color','#222');
+        $('#sidebar-wrapper').css('background-color','#222');
         $('#sidebar-wrapper li a').css('color','white');
         $('#nav-1 a').css('color','white');
         $('#sidebar-wrapper li a').css('font-weight','400');
@@ -21,10 +21,13 @@ $(window).scroll(function(){
     if (isScrolledIntoView('#education')===true){
         $('body').css('background-color','#cbdfeb');
         $('#sidebar-wrapper').css('background-color','#cbdfeb');
-        $('#sidebar-wrapper li a').css('color','black');
+        $('#sidebar-wrapper li a').css('color','#46808e');
         $('#nav-2 a').css('color','#46808e');
         $('#sidebar-wrapper li a').css('font-weight','400');
+        $('#sidebar-wrapper li a').css('text-transform','none');
         $('#nav-2 a').css('font-weight','700');
+        $('#nav-2 a').css('text-transform','uppercase');
+
 
     } else {
         // something else
@@ -33,12 +36,15 @@ $(window).scroll(function(){
 
 
     if (isScrolledIntoView('#experience')===true){
-        $('body').css('background-color','#beb9b5');
-        $('#sidebar-wrapper').css('background-color','#beb9b5');
-        $('#sidebar-wrapper li a').css('color','black');
-        $('#nav-1 a').css('color','black');
+        $('body').css('background-color','#525564');
+        $('#sidebar-wrapper').css('background-color','#525564');
+        $('#sidebar-wrapper li a').css('color','#d4d5d9');
+        $('#nav-3 a').css('color','#d4d5d9');
         $('#sidebar-wrapper li a').css('font-weight','400');
-        $('#nav-1 a').css('font-weight','700');
+        $('#sidebar-wrapper li a').css('text-transform','none');
+        $('#nav-3 a').css('font-weight','700');
+        $('#nav-3 a').css('text-transform','uppercase');
+
 
     } else {
         // something else
@@ -49,61 +55,42 @@ $(window).scroll(function(){
     if (isScrolledIntoView('#skillset')===true){
         $('body').css('background-color','#beb9b5');
         $('#sidebar-wrapper').css('background-color','#beb9b5');
-        $('#sidebar-wrapper li a').css('color','black');
-        $('#nav-1 a').css('color','black');
+        $('#sidebar-wrapper li a').css('color','#4a4740');
+        $('#nav-4 a').css('color','#4a4740');
         $('#sidebar-wrapper li a').css('font-weight','400');
-        $('#nav-1 a').css('font-weight','700');
+        $('#sidebar-wrapper li a').css('text-transform','none');
+        $('#nav-4 a').css('font-weight','700');
+        $('#nav-4 a').css('text-transform','uppercase');
 
     } else {
         // something else
     }
 
 
-
-    if (isScrolledIntoView('#section-four')===true){
-        $('body').css('background-color','#DFF7E8');
-        $('#nav li a').css('color','#222');
-        $('#nav-4 a').css('color','#A2E8BC');
-        $('#nav li a').css('font-weight','400');
-        $('#nav-4 a').css('font-weight','600');
-
+    if (isScrolledIntoView('#location')===true){
+        $('body').css('background-color','#c25b56');
+        $('#sidebar-wrapper').css('background-color','#c25b56');
+        $('#sidebar-wrapper li a').css('color','#f8cfc3');
+        $('#nav-5 a').css('color','#f8cfc3');
+        $('#sidebar-wrapper li a').css('font-weight','400');
+        $('#sidebar-wrapper li a').css('text-transform','none');
+        $('#nav-5 a').css('font-weight','700');
+        $('#nav-5 a').css('text-transform','uppercase');
 
     } else {
         // something else
     }
 
+    if (isScrolledIntoView('#contact')===true){
+        $('body').css('background-color','#758390');
+        $('#sidebar-wrapper').css('background-color','#758390');
+        $('#sidebar-wrapper li a').css('color','white');
+        $('#nav-6 a').css('color','white');
+        $('#sidebar-wrapper li a').css('font-weight','400');
+        $('#sidebar-wrapper li a').css('text-transform','none');
+        $('#nav-6 a').css('font-weight','700');
+        $('#nav-6 a').css('text-transform','uppercase');
 
-
-    if (isScrolledIntoView('#section-five')===true){
-        $('body').css('background-color','#FFF2CC');
-        $('#nav li a').css('color','#222');
-        $('#nav-5 a').css('color','#FFDF80');
-        $('#nav li a').css('font-weight','400');
-        $('#nav-5 a').css('font-weight','600');
-    } else {
-        // something else
-    }
-
-
-
-    if (isScrolledIntoView('#section-six')===true){
-        $('body').css('background-color','#FFE3CC');
-        $('#nav li a').css('color','#000');
-        $('#nav-6 a').css('color','#FFB980');
-        $('#nav li a').css('font-weight','400');
-        $('#nav-6 a').css('font-weight','600');
-    } else {
-        // something else
-    }
-
-
-
-    if (isScrolledIntoView('#section-seven')===true){
-        $('body').css('background-color','#F4CDCD');
-        $('#nav li a').css('color','#000');
-        $('#nav-7 a').css('color','#DD6464');
-        $('#nav li a').css('font-weight','400');
-        $('#nav-7 a').css('font-weight','600');
     } else {
         // something else
     }
@@ -129,6 +116,14 @@ function isScrolledIntoView(elem)
 
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
+
+
+// form jquery
+
+$('form').submit(function (){
+    // do something on form submit
+
+});
 
 
 //end doc ready

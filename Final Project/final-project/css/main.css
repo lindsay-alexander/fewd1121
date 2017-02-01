@@ -8,16 +8,33 @@
     overflow-x: hidden;
     font-family: 'Karla', Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
+    background: #222;
+    transition: background 0.5s ease;    
  }
 
 /*Row*/
 .row div {
-/*    outline: 1px solid black;
-*/    padding: 4%;
+    /*outline: 1px solid black;*/
 }
 
-.container-fluid{
-    padding: 12% 0;
+.school, .work, .skill, .newyork, .location{
+    padding: 7%;
+}
+
+#education, #experience, #skillset, #contact{
+    padding: 15% 0;
+}
+
+#page-content-wrapper{
+    padding: 10% 0;
+}
+
+#home .row{
+    padding: 25% 0;
+}
+
+#location .row{
+    height: 600px;
 }
 
 /*Headers*/
@@ -81,27 +98,23 @@ p{
 }
 
 /*Education*/
-.education{
-    /*background: #cbdfeb;*/
-}
 
 .education h3,.education h4,.education h5,.education p{
     color: black;
 }
 
 /*Experience*/
-.experience{
-    /*background: #525565;*/
-}
 
 .experience h3,.experience h4,.experience h5,.experience p{
     color: white;
 }
 
-/*Skillset*/
-.skillset{
-    /*background: #beb9b5;*/
+.work span{
+    font-weight: 400;
+    opacity: .4;
 }
+
+/*Skillset*/
 
 .skillset h3,.skillset h4,.skillset h5,.skillset p{
     color: black;
@@ -113,7 +126,7 @@ p{
 
 /*Location*/
 .location{
-    /*background-image: url(../images/location.png);*/
+    background-image: url(../images/location.png);
     background-size: cover;
 }
 
@@ -123,13 +136,14 @@ p{
 
 /*Contact*/
 .contact{
-    background: #758390;
-}
+/*    background: #758390;
+*/}
 
 /*Form Styles*/
 .well{
     background: none;
     border: none;
+    box-shadow: none;
 }
 
 .row .form-group{
@@ -175,11 +189,11 @@ p{
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #000;
+    background: #222;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    transition: background 0.5s ease;    
 }
 
 #wrapper.toggled #sidebar-wrapper {
