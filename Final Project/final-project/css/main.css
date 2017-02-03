@@ -8,8 +8,8 @@
     overflow-x: hidden;
     font-family: 'Karla', Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
-    background: #222;
-    transition: background 0.5s ease;    
+/*    background: #222;
+*/   transition: background 0.5s ease;    
  }
 
 /*Row*/
@@ -21,8 +21,12 @@
     padding: 7%;
 }
 
-#education, #experience, #skillset, #contact{
-    padding: 15% 0;
+#education{
+    padding: 15% 0 15% 0;
+}
+
+#experience, #skillset, #contact{
+    padding: 5% 0 15% 0;
 }
 
 #page-content-wrapper{
@@ -89,7 +93,7 @@ h5{
 }
 
 p{
-    font-size: 1.25rem;
+    font-size: 1.3rem;
 }
 
 /*Home*/
@@ -104,6 +108,9 @@ p{
 }
 
 /*Experience*/
+/*#education{
+    background: #cbdfeb;
+}*/
 
 .experience h3,.experience h4,.experience h5,.experience p{
     color: white;
@@ -282,7 +289,7 @@ p{
         margin-right: 0;
     }
 
-    #menu-toggle{
+/*    #menu-toggle{
         display: none;
-    }
+    }*/
 }
