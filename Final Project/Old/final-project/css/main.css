@@ -1,126 +1,295 @@
-/*Overall*/
+/*!
+ * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
 
-.container-fluid {
-	width: 100%;
+ body {
+    overflow-x: hidden;
+    font-family: 'Karla', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+/*    background: #222;
+*/   transition: background 0.5s ease;    
+ }
+
+/*Row*/
+.row div {
+    /*outline: 1px solid black;*/
 }
 
-.clearfix{
-	overflow: auto;
+.school, .work, .skill, .newyork, .location{
+    padding: 7%;
 }
 
-body{
-	font-family: 'Karla', sans-serif;
-	font-size: 14px;
-	line-height: 1.5;
-	-webkit-font-smoothing: antialiased;
-	height: 100%
+#education{
+    padding: 15% 0 15% 0;
 }
 
-.wrapper{
-	height: 100%
+#experience, #skillset, #contact{
+    padding: 5% 0 15% 0;
 }
 
-/*Homepage*/
-
-.intro {
-	color: white;
-	text-align: center;
-	height: 100%;
+#page-content-wrapper{
+    padding: 10% 0;
 }
 
-#homepage{
-	background-image: url("../images/hawaii.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
+#home .row{
+    padding: 25% 0;
 }
 
+#location .row{
+    height: 600px;
+}
+
+/*Headers*/
 h1{
-	font-size: 2.5rem;
-	font-weight: 700;
-	letter-spacing: 10;
-	text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
-	margin: 0;
-	opacity: 0.8;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    margin: 0;
+    opacity: 0.8;
+    color: white;
 }
 
 h2{
-	font-size: 1.75rem;
-	font-weight: 400;
-	letter-spacing: 8;
-	text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
-	padding: 4% 0 6% 0;
-	margin: 0;
-	opacity: 0.8;
+    font-size: 1.75rem;
+    font-weight: 400;
+    letter-spacing: .8rem;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    padding: 4% 0 6% 0;
+    margin: 0;
+    opacity: 0.8;
+    color: white;
 }
 
 .intro p{
-	font-size: 1.4rem;
-	line-height: 1.75;
-	font-weight: 400;
-	opacity: .75;
-	text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
-	letter-spacing: 0.2;
+    font-size: 1.4rem;
+    color: white;
+    line-height: 1.75;
+    font-weight: 400;
+    opacity: .75;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    letter-spacing: 0.2;
 }
 
-#arrow{
-	transform: rotate(-90deg);
-	-webkit-transform: rotate(-90deg);
-	height: 45px;
+h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+h4{
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+h5{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 5%;
+}
+
+p{
+    font-size: 1.3rem;
+}
+
+/*Home*/
+.home{
+    background-image: url(../images/bg.jpg);
 }
 
 /*Education*/
 
-#homepage{
-	background-color: #96c0ce;
+.education h3,.education h4,.education h5,.education p{
+    color: black;
 }
 
+/*Experience*/
+/*#education{
+    background: #cbdfeb;
+}*/
 
-/*Nav*/
+.experience h3,.experience h4,.experience h5,.experience p{
+    color: white;
+}
 
+.work span{
+    font-weight: 400;
+    opacity: .4;
+}
 
+/*Skillset*/
 
+.skillset h3,.skillset h4,.skillset h5,.skillset p{
+    color: black;
+}
 
+.icons{
+    height: 50px;
+}
 
+/*Location*/
+.location{
+    background-image: url(../images/location.png);
+    background-size: cover;
+}
 
+.location h3,p{
+    color: white;
+}
 
+/*Contact*/
+.contact{
+/*    background: #758390;
+*/}
 
+/*Form Styles*/
+.well{
+    background: none;
+    border: none;
+    box-shadow: none;
+}
 
+.row .form-group{
+    padding: 0;
+}
 
+.btn-primary{
+    background: #454f5b;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+}
 
+.btn-portfolio{
+    background: rgba(255,255,255,0.75);
+    color: #454f5b;
+}
 
+.btn-primary:hover .btn-portfolio:hover{
+    background: rgb(255,255,255);
+}
 
+/* Toggle Styles */
 
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
 
+#wrapper.toggled {
+    padding-left: 250px;
+}
 
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: background 0.5s ease;    
+}
 
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
 
+#page-content-wrapper {
+    width: 100%;
+    padding: 15px;
+}
 
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
 
+/* Sidebar Styles */
 
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+    font-size: 1.5rem;
+}
 
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
 
+.sidebar-nav li a:hover {
+    text-decoration: none;
+/*    color: #fff;
+*/    background: rgba(255,255,255,0.2);
+}
 
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
 
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
 
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
 
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
 
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
 
-/*media queries*/
+    #wrapper.toggled {
+        padding-left: 0;
+    }
 
-/*large desktops/laptops*/
-/*@media(min-width: 1200px){}*/
+    #sidebar-wrapper {
+        width: 250px;
+    }
 
-/*landscape tablets and medium devices*/
-/*@media (min-width: 992px) and (max-width: 1199px){}*/
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
 
-/*portrait tablets and small desktops*/
-/*@media (min-width: 768px) and (max-width: 991px){}*/
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
 
-/*landscape phones and small portrait tablets*/
-/*@media (min-width: 480px) and (max-width: 767px){}*/
-
-/*landscape phones and small portrait tablets*/
-/*@media (max-width: 479px){}*/
-
-
+/*    #menu-toggle{
+        display: none;
+    }*/
+}
